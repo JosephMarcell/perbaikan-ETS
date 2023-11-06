@@ -24,12 +24,12 @@
     <script>
         const list = document.getElementById("list");
 
-        fetch("https://pokeapi.co/api/v2/pokemon?offset=0&limit=5")
+        fetch("https://pokeapi.co/api/v2/pokemon?offset=0&limit=20")
             .then(response => response.json()) 
             .then(data => {
                 data.results.forEach((pokemon, i) => {
                     const card = document.createElement("div");
-                    card.className = "col-6 gy-2 mx-10 col-sm-2 m-3";
+                    card.className = "col-xl-3 col-md-6 mb-4 col-ms-6 ";
                     card.innerHTML = `
                     <div class="container-card">
                         <div class="card border-primary">
